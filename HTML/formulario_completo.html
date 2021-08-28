@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./tabla.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+  </head>
+ <body>
+    <script src="../SCRIPTS/jquery.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../SCRIPTS/usuario.js"></script>
+    <script src="../SCRIPTS/tabla.js"></script>
+    <script src="../SCRIPTS/datepicker.js"></script>
+    <script src="../SCRIPTS/require.js"></script>
+    <script src="../SCRIPTS/buscar.js"></script>
+    <script src="../SCRIPTS/editar.js"></script>
+    <script src="../SCRIPTS/eliminar.js"></script>
+    
+    <div id="prueba"></div>
+    <input type="hidden" id="lololo">
+    <div align="right" class="text-rigth" style="margin: 10px 20px;">
+      <a href="./log.html" ><button>Cerrar Sesión</button></a>
+    </div>
+    <div align="right">
+        <a href="./registro.html"><input id="reg" class="btn btn-success" value="Registrarse" ></a>
+    </div>
+    <div class="form-group row" align="center" style="margin:  10px;">
+      <div align="center" class=" text-center">     
+        <input placeholder="Buscar..." type="text" name="search" id="search" class="form-control" />
+      </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+      <div id="tab1" class="tab tab-1"></div>
+      <button id="botonn">Click para mostrar tabla</button>
+      <input type='button' id='add' value='Añadir fecha'/>
+    <div class="tab tab-2">
+      <form id="form1" name="miform" class="narrow" method="post">
+          <h3 id="h1" class="display-4 text-muted agr">Nueva festividad</h3>
+          <h3 id="h2" class="display-4 text-muted edit">Editar festividad</h3>
+          <div class="row">
+          <div class="col-sm-9">  
+           <br><br>
+          <input style="display:none" type="text" id="id"/>
+          <h5>Fecha: <input id="contact_usuario" name="usuario" placeholder="Pinche aqui" /><span class="error">Campo requerido</span></h5>
+          <h5>Horario</h5>
+          <label for="last_name">Desde</label>
+          <input class="form-control" type="text" id="contact_password" name="password" placeholder="inicio de la festividad"/><span class="error">Campo requerido</span>
+          <br>
+          <label for="last_name">Hasta</label>
+          <input class="form-control" type="text" id="contact_nombre" name="nombre" placeholder="Fin de la festividad"/><span class="error">Campo requerido</span>
+          <br>
+        <h5>Call Center</h5>
+          <div id="x"></div>
+        <br>
+        <h5>Descripción</h5>
+          <input class="form-control" type="text" id="contact_descripcion" name="descripcion" placeholder="Descripción de la festividad"><span class="error">Campo requerido</span>
+        <br>
+        <input class="miau btn btn-primary agr" type="submit" id="submit_post" value="agregar" style="height: 80px; width: 160px" onclick="return false;">
+        <input class="miau btn btn-success edit" type="submit" id="submit_post2" value="editar" style="height: 80px; width: 160px" onclick="return false;">
+        <input class="btn btn-danger edit" type="submit" id="submit_post3" value="eliminar" style="height: 80px; width: 160px" onclick="return false;">
+        <br><br><br>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./tabla.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <title>Registro</title>
+
+ </head>
+ <body>
+    <script src="../SCRIPTS/jquery.js"></script>
+    <script src="../SCRIPTS/registro.js"></script>
+    <script src="../SCRIPTS/require.js"></script>
+    <div class="container">
+      <h3 class="display-4 text-muted">Registro</h3>
+      <div class="row">
+      <div class="col-sm-9"> 
+        <div class="form-group">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+<body>
+
+
+<div id="fecha" align="right">
+<script>
+var f = new Date();
+document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+</script>
+</div>
+
+
+  <script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;" align="right"></div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+
+ 
+ 
+</body>
+
+
+
+  <form id="contact" method="post" >
+      <h5 align="center">Nombre</h5>
+        <div class="form-group" align="center">
+          <input class="form-control" type="text" name="nombre" id="contact_nombre" placeholder="Nombre"><span class="error">Campo requerido</span>
+        </div>
+
+
+        <h5 align="center">Apellidos</h5>
+        <div class="form-group" align="center">
+          <input class="form-control" name="apellidos" type="text" id="contact_apellidos" placeholder="Apellidos" ><span class="error">Campo requerido</span>
+        </div>
+          
+        
+        <h5 align="center">Usuario</h5>
+        <div class="form-group" align="center">
+          <input class="form-control" name="usuario" type="text" id="contact_usuario" placeholder="Usuario" ><span class="error">Campo requerido</span>
+        </div>
+
+        <h5 align="center">Contraseña</h5>
+        <div class="form-group" align="center">
+          <input class="form-control" name="password" type="password" id="contact_password" placeholder="Contraseña" ><span class="error">Campo requerido</span>
+        </div>
+
+
+        <h5 align="center">E-mail</h5>
+        <div class="form-group" align="center">
+          <input class="form-control" name="email" type="email" id="contact_email" placeholder="Email"><span class="error">Introduce una dirección de correo válida</span>
+        </div>
+
+        <h5>Privilegios</h5>
+          <select  id="contact_descripcion" class="form-control">
+              <option value="">Dar privilegios</option>
+              <option>Si</option>
+              <option>No</option>
+          </select>
+
+
+        <div align="center">
+        <input id="reg" type="submit" class="btn btn-primary" value="Registrarse" onclick="return false;"></input>
+        </div>
+  </form>
+        
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
